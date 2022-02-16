@@ -1,0 +1,18 @@
+{
+	"extends": "fastify-tsconfig",
+	"compilerOptions": {
+		"outDir": "dist",
+		"target": "ESNext",
+		"lib": [
+			"ESNext"
+		],
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"strictPropertyInitialization": false
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}

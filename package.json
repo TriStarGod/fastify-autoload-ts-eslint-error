@@ -1,0 +1,49 @@
+{
+	"name": "fastify-autoload-ts-eslint-error",
+	"version": "1.0.0",
+	"private": true,
+	"main": "server.ts",
+	"scripts": {
+		"start": "pnpm ts-node src/server.ts | pnpm pino-colada",
+		"build_ts": "tsc",
+		"clean": "rimraf dist/",
+		"dev": "nodemon",
+		"tsx": "tsc --pretty --noEmit",
+		"updateLatest": "pnpm up --latest"
+	},
+	"keywords": [],
+	"author": "me",
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"fastify": "^3.27.1",
+		"fastify-autoload": "^3.10.0",
+		"fastify-cli": "^2.15.0",
+		"fastify-cors": "^6.0.2",
+		"fastify-error": "^0.3.1",
+		"fastify-helmet": "^7.0.1",
+		"fastify-multipart": "^5.3.0",
+		"fastify-plugin": "^3.0.1",
+		"fastify-rate-limit": "^5.7.0",
+		"fastify-sensible": "^3.1.2",
+		"fastify-swagger": "^4.14.0"
+	},
+	"devDependencies": {
+		"@types/app-root-path": "^1.2.4",
+		"@types/eslint": "^8.4.1",
+		"@types/node": "^17.0.15",
+		"@typescript-eslint/eslint-plugin": "^5.10.2",
+		"@typescript-eslint/parser": "^5.10.2",
+		"concurrently": "^7.0.0",
+		"eslint": "^8.8.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-prettier": "^4.0.0",
+		"fastify-tsconfig": "^1.0.1",
+		"nodemon": "^2.0.15",
+		"pino-colada": "^2.2.2",
+		"prettier": "^2.5.1",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.5"
+	}
+}
